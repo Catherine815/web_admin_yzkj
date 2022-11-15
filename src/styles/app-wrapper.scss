@@ -1,0 +1,32 @@
+// main-container全局样式
+#app {
+  .app-wrapper {
+    height: 100%;
+  }
+  .main-container {
+    min-height: 100%;
+    transition: margin-left .28s;
+    margin-left: $sideBarWidth;
+    position: relative;
+    background-color: #ffffff;
+  }
+  .navbar-container {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    overflow: hidden;
+    background-color: #2b7fc1;
+    box-shadow: 0 1px 4px rgba(179, 218, 236, 0.911);
+  }
+  .app-container {
+    padding: 20px;
+  }
+}
+
+/* app-container common style */
+.app-container {
+  .data-pagination {
+    padding: 30px 0 10px;
+    text-align: center;
+  }
+}

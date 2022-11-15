@@ -1,0 +1,35 @@
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+// sidebar
+$menuText:#303133;
+$menuActiveText:#409eff;
+$subMenuActiveText:#409eff;
+
+$menuBg:#ffffff;
+$menuHover:#f0f2f5;
+
+$subMenuBg:#ffffff;
+$subMenuHover:#f0f2f5;
+
+$navbarHeight: 70px;
+$sideBarWidth: 210px;
+
+// the :export directive is the magic sauce for webpack
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
