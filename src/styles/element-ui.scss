@@ -1,0 +1,143 @@
+/* 修改element-ui里面一些默认样式 */
+
+.custom-cascader .el-cascader-panel {
+  .el-radio{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .el-radio__input {
+    visibility: hidden;
+  }
+  ::placeholder {
+    color: #606266;
+  }
+}
+
+// form表单在做列表查询时
+.search-container {
+  width: 100%;
+  .el-form--inline {
+    .el-form-item{
+      max-width: 450px;
+      min-width: 200px;
+      margin-bottom: 15px;
+    }
+    .el-form-item__content{
+      max-width: 350px;
+      min-width: 120px;
+    }
+    .el-input__inner {
+      border: 1px solid #ababab;
+    }
+  }
+}
+// form表单中：el-form默认样式及其他样式
+.form-container {
+  .el-form{
+    width: 90%;
+    .el-form-item {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    .el-select{
+      width: 100%;
+    }
+    .cus-form-block {
+      display: block;
+      width: 100%
+    }
+  }
+  .upload-ah {
+    .upload-icon {
+      display: inline-block;
+      margin-right: 20px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+  .form-btn-group {
+    padding-top: 30px;
+    .el-button{
+      width: 120px;
+      margin-right: 20px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+// 解决element-ui中 table组件线条对不准
+.app-container .el-table th.gutter {
+  display: table-cell !important;
+}
+
+// 解决number类型的input框右侧的增减按钮padding问题，让增减按钮靠最右边
+.el-input .el-input__inner[type="number"] {
+  padding-right: 0px;
+}
+
+// el-card
+.el-card__header {
+  padding: 18px 20px 10px;
+}
+
+// 修改dialog默认样式
+.el-dialog__header {
+  background-color: #2b7fc1;
+  box-shadow: 0 1px 4px rgba(179, 218, 236, 0.911);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.el-dialog__title, .el-dialog__headerbtn .el-dialog__close{
+  color: #ffffff;
+}
+.el-dialog__body {
+  padding-bottom: 10px;
+}
+.el-dialog.is-fullscreen .el-dialog__body {
+  height: calc(100% - 55px);
+}
+
+// 修改el-descriptions
+.el-descriptions-row {
+  height: 40px;
+}
+.el-descriptions .is-bordered {
+  table-layout: fixed;
+}
+.desc-label {
+  width: 150px;
+  font-weight: 600;
+}
+.desc-con span{
+  white-space: normal;
+  word-break: break-all;
+}
+
+// 有目录文件查看的dialog下拉时样式
+.audit-dialog {
+  .el-dialog .el-dialog__header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  .content-wrap {
+    margin-top: 55px;
+    .left {
+      position: fixed;
+      overflow: hidden;
+    }
+    .right {
+      margin-left: 260px;
+    }
+  }
+}
